@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pytest = "*"
+pytest-coverage = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+tests = " pytest tests --cov src --cov-report term-missing"
+orders = "python3 src/main.py"
